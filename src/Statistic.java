@@ -28,7 +28,7 @@ public class Statistic {
     }
 
     public double getAverage(int[] list) {
-        int count = 0;
+        double count = 0;
         int sum = 0;
         for (int n : list) {
             sum += n;
@@ -63,5 +63,9 @@ public class Statistic {
             count++;
         }
         return variance / (count - 1);
+    }
+
+    public double getCV(int[] list) {
+        return this.getStd(list) / this.getAverage(list) * 100;
     }
 }
