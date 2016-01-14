@@ -1,7 +1,7 @@
 /**
  * Created by Yulong on 1/13/2016.
  */
-public class Statistic {
+public class Statistic implements StatisticMethods{
 
     public double getComplement(double a) {
         return 1 - a;
@@ -25,6 +25,10 @@ public class Statistic {
 
     public boolean isIndependent(double a, double b) {
         return this.getIntersection(a, b) == a * b;
+    }
+
+    public boolean isMutuallyExclusive(double a, double b) {
+        return this.getIntersection(a, b) == 0;
     }
 
     public double getAverage(int[] list) {

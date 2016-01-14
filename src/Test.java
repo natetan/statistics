@@ -13,11 +13,12 @@ public class Test {
         System.out.println(s.getIntersection(a, b));
         System.out.println(s.getUnion(a, b));
         System.out.println(s.getComplement(s.getUnion(a, b)));
-        System.out.println(s.isIndependent(a, b));
+        System.out.println("Independent: " + s.isIndependent(a, b));
+        System.out.println("ME: " + s.isMutuallyExclusive(.23, .76));
 
 
         int[] data = {62, 65, 68, 68, 68, 69, 71, 73, 74, 77, 82};
-        getData(data);
+        // getData(data);
     }
 
     private static void getData(int[] data) {
