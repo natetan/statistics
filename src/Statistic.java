@@ -72,4 +72,28 @@ public class Statistic implements StatisticMethods{
     public double getCV(int[] list) {
         return this.getStd(list) / this.getAverage(list) * 100;
     }
+
+    // Which value is at the given percentile?
+    public double getPercentileValue(int[] list, int percent) {
+        int index = 0;
+        int count = 0;
+        for (int num : list) {
+            count++;
+        }
+        index = (int)Math.floor(percent / 100.0 * (count + 1));
+        return (list[index - 1] + list[index]) / 2.0;
+    }
+
+    // What is the percentile of the target value?
+    public double getPercentile(int[] list, int targetValue) {
+        int count = 0;
+        int size = 0;
+        for (int num : list) {
+            if (num < targetValue) {
+                count++;
+            }
+            size++;
+        }
+        return (count / (double)size) * 100;
+    }
 }
