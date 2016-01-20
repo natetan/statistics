@@ -27,4 +27,8 @@ public interface StatisticMethods {
     public double getSampleVariance(int[] list);
 
     public double getCV(int[] list);
+
+    public double getPercentileValue(int[] list, int percent);
+
+    public double getPercentile(int[] list, int targetValue);
 }
