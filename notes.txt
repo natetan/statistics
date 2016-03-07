@@ -1,0 +1,29 @@
+3.7.15 Monday 
+The struggle of forgetting the course pack
+Gotta take notes in vim
+
+Least Squares Fit
+	- Always skewed right
+	- F-Statistic
+		- Bigger F is better
+		- Ratio of explained variation to unexplained variation
+	- The degrees of freeedom df are k and n-k-1
+	- 2 formulas
+		- Standard error of slop
+		- Standard error of intercept
+	- 2 Hypotheses to test
+		- H0:a = 0
+		- H1:1 != 0
+
+		- H0:b = 0
+		- H1:b != 0
+	- They test whether the estimates of intercept a and slope b are 
+	  significantly different
+	- When there's only 1 slope estimated, ask if the overall fit
+	  significant?
+	- Assumptions about the random error
+		- Errors are normall distributed
+		- Errors have constant variance
+		- The errors are independent
+	- Yield(Purifier) = 13.452 + 4.908 * Purifier
+	- 
